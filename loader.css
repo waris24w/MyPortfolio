@@ -1,0 +1,68 @@
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader-wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Progress Bar */
+.loader-bar {
+    width: 250px;
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loader-bar-fill {
+    height: 100%;
+    background: #000;
+    border-radius: 10px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.loader-text {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.loader-percentage {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .loader-bar {
+        width: 200px;
+    }
+    .loader-text {
+        font-size: 12px;
+    }
+    .loader-percentage {
+        font-size: 16px;
+    }
+}

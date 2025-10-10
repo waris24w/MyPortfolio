@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styeles.css">
+    <link rel="stylesheet" type="text/css" href="loader.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+</head>
+
+<body>
+    <div class="loader-wrapper" id="loader">
+    <div class="loader-bar">
+        <div class="loader-bar-fill" id="barFill"></div>
+    </div>
+    <p class="loader-text">Loading</p>
+    <p class="loader-percentage" id="percentage">0%</p>
+</div>
+
+
+
+    <div class="main">
+       <div class="nav">
+           <p id="nameLogo">Muhammad Waris</p>
+           
+           <div class="hamburger" onclick="toggleMenu()">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+
+           <div class="navText">
+               <ul>
+                   <li><a href="#about" onclick="closeMenu()">About</a></li>
+                   <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+                   <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                   <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+               </ul>
+           </div>
+       </div>
+
+       <div class="overlay" onclick="closeMenu()"></div>
+
+
+        <section class="hero">
+           <!--  <div class="video-container">
+        <video src="resourses/4733-179738669_small.mp4" autoplay loop muted>
+        </video>
+    </div> -->
+            <div class="main-img-wrapper">
+                <div class="main-img"></div>
+            </div>
+            <div class="main-text">
+                <p>Hello, I'm</p>
+                <h1>Muhammad Waris</h1>
+                <h2><span id="typed"></span><span class="typed-cursor"></span></h2>
+                <div class="mainBtn">
+                    <button id="btncv"><a href="resourses/MyResume.pdf">Download CV</a></button>
+                    <button id="btn2"><a href="#contact">Contact Info</a></button>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section id="about" class="about">
+            <div class="aboutText">
+                <p>Get To Know More</p>
+                <h1>About Me</h1>
+            </div>
+            <div class="aboutCont">
+                <div class="aboutImg"></div>
+                <div class="aboutDetails">
+                    <div class="boxCont">
+                        <div class="box pinborder">
+                            <img src="resourses/badge.png">
+                            <p class="experience">Experience</p>
+                            <p class="grey">2+ years</p>
+                            <p class="grey">Frontend Development</p>
+                        </div>
+                        <div class="box pinborder">
+                            <img src="resourses/people.png">
+                            <p class="experience">Education</p>
+                            <p class="grey">Intermediate</p>
+                            <p class="grey">B.Sc. Bachelors Degree</p>
+                        </div>
+                    </div>
+                    <div class="boxText">
+                        <p class="grey" style="line-height: 1.2;letter-spacing: 1px;">I’m a passionate <b>Full-Stack Web Developer</b> focused on building clean, responsive, and user-friendly web applications. On the frontend, I specialize in creating engaging interfaces using modern technologies like HTML, CSS, and JavaScript. On the backend, I develop <b>robust and scalable systems</b> using Node.js and Express. I’m driven by problem-solving, continuous learning, and turning creative ideas into real-world digital solutions that help businesses grow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="header">
+                <div class="subtitle">Explore My</div>
+                <h1 class="title">Experience</h1>
+            </div>
+            <div class="content">
+                <div class="card pinborder">
+                    <h2 class="card-title">Frontend Development</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">HTML</div>
+                                <div class="skill-level">Experienced</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">CSS</div>
+                                <div class="skill-level">Experienced</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">SASS</div>
+                                <div class="skill-level">Intermediate</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-level">Basic</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">TypeScript</div>
+                                <div class="skill-level">Basic</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">Material UI</div>
+                                <div class="skill-level">Intermediate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card pinborder">
+                    <h2 class="card-title">Backend Development</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">MongoDb</div>
+                                <div class="skill-level">Basic</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">Node JS</div>
+                                <div class="skill-level">Intermediate</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">Express JS</div>
+                                <div class="skill-level">Intermediate</div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-check"></div>
+                            <div class="skill-content">
+                                <div class="skill-name">Git</div>
+                                <div class="skill-level">Intermediate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="project">
+            <div class="header">
+                <div class="subtitle">Browse My Recent</div>
+                <h1 class="title">Projects</h1>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="showProjects('all')">All</button>
+                <button class="filter-btn" onclick="showProjects('frontend')">Frontend</button>
+                <button class="filter-btn" onclick="showProjects('backend')">Backend</button>
+                <button class="filter-btn" onclick="showProjects('fullstack')">Fullstack</button>
+            </div>
+            
+            <div class="demo-container">
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact">
+            <div class="header">
+                <div class="subtitle">Get in Touch</div>
+                <h1 class="title">Contact Me</h1>
+            </div>
+            <div class="contactBox pinborder">
+                <div class="contactEmail">
+                    <img src="resourses/email.png">
+                    <div class="mail">
+                        <a href="mailto:waris2121shah@gmail.com">waris2121shah@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contactlindein">
+                    <img src="resourses/linkedin.png">
+                    <div class="mail">
+                        <a target="_blank" href="https://www.linkedin.com/in/muhammad-waris-python-developer/">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footmain">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footmini">
+                <p>Copyright © 2025 <b>Waris</b>. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="loader.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="src.js">
+    </script>
+
+</body>
+
+</html>
