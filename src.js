@@ -18,9 +18,21 @@ const typed = new Typed("#typed", {
  
 
 
+
  const projects = [
-     {
+    {
          id: 1,
+         title: "Portfolio Website",
+         description: "The project showcases smooth GSAP animations, responsive design, and attention to micro-interactions that bring the interface to life.",
+         category: "frontend",
+         image: "resourses/personal portfolio-1.png",
+         technologies: ["JavaScript", "Gsap", "LocoMotive"],
+         status: "completed",
+         demo:"https://waris24w.github.io/Cynthia-Ugwu/",
+         github:"https://github.com/waris24w/Cynthia-Ugwu"
+     },
+     {
+         id: 2,
          title: "Spotify Clone",
          description: "A full-featured music streaming application clone with playlist management, search functionality, and audio player controls.",
          category: "backend",
@@ -32,7 +44,7 @@ const typed = new Typed("#typed", {
          github:"https://github.com/waris24w/Spotify-Clone/"
      },
      {
-         id: 2,
+         id: 3,
          title: "Technical Courses",
          description: "An online learning platform offering technical courses with video lessons, quizzes, and progress tracking for students.",
          category: "frontend",
@@ -44,7 +56,7 @@ const typed = new Typed("#typed", {
          demo:"https://waris24w.github.io/Simsat-Site/"
      },
      {
-         id: 3,
+         id: 4,
          title: "E-Commerce Website",
          description: "A modern shopping platform with cart functionality, payment integration, and product management system.",
          category: "fullstack",
