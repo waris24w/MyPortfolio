@@ -21,15 +21,7 @@ const typed = new Typed("#typed", {
 
  const projects = [
     {
-         id: 1,
-         title: "Portfolio Website",
-         description: "The project showcases smooth GSAP animations, responsive design, and attention to micro-interactions that bring the interface to life.",
-         category: "frontend",
-         image: "resourses/personal portfolio-1.png",
-         technologies: ["JavaScript", "Gsap", "LocoMotive"],
-         status: "completed",
-         demo:"https://waris24w.github.io/Cynthia-Ugwu/",
-         github:"https://github.com/waris24w/Cynthia-Ugwu"
+         id: 1, title: "Sundown Studio", description: "The project showcases smooth GSAP animations, responsive design, and attention to micro-interactions that bring the interface to life.", category: "frontend", image: "resourses\\projectsImg\\sundown1.jpeg", technologies: ["JavaScript", "Gsap", "LocoMotive"], status: "completed", demo:"https://waris24w.github.io/sundown/", github:"https://github.com/waris24w/sundown"
      },
      {
          id: 2,
